@@ -19,7 +19,7 @@ class Parser_foto:
         with open(name, 'w') as f:
             f.write(res)
 
-    def soup_from_file(name_file="pic.html"):
+    def soup_from_file(self, name_file="pic.html"):
         """Парсинг из ранее записанного файла html"""
         with open(name_file, 'r') as f:
             soup = BeautifulSoup(f, 'html.parser')
